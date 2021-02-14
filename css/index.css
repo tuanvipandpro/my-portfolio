@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 1%;
+}
+
+.portfolio-info {
+    margin: 0 auto;
+    width: 80%;
+    border: none;
+    padding-bottom: 25px !important;
+}
+
+.portfolio-info-box {
+    text-align: left;
+    width: 50%;
+}

@@ -16,10 +16,20 @@
     <script src="js/index.js"></script>
 </head>
 <body>
-    <div class="header"></div>
+    <div class="header" style="background-image: url('images/bg-1.jpg');" >
+        <nav class="navbar sticky-top navbar-light" style="top: 5px">
+            <div class="h4" style="margin-left: 10%;">My Profile</div>
+            <div style="margin-right: 10%;">
+              <a class="navbar-brand" href="#about-section"><small>About</small></a>
+              <a class="navbar-brand" href="#tech-section"><small>Skills</small></a>
+              <a class="navbar-brand" href="#exp-section"><small>Experience</small></a>
+              <a class="navbar-brand" href="#pet-section"><small>Work</small></a>
+            </div>
+        </nav>
+    </div>
     <div class="body">
         <!-- Information Section -->
-        <div class="portfolio-info shadow p-3 mb-5 bg-body rounded d-flex">
+        <div id="about-section" class="portfolio-info shadow p-3 mb-5 bg-body rounded d-flex">
             <div class="portfolio-info-box">
                 <h3 style="margin-bottom: 20px;">About</h3>             
                 <p>Hello! I am Le Minh Tuan. Java Full Stack Web Developer.</p>
@@ -53,9 +63,8 @@
             </div>
         </div>
         <!-- Technical Section -->
-        <h3>Technical Skill</h3>
+        <h3 id="tech-section">Technical Skill</h3>
         <div class="portfolio-info shadow p-3 mt-3 mb-5 bg-body rounded text-center">
-            
             <div class="d-flex" style="margin-top: 20px;">
                 <div class="portfolio-info-box">
                     <div class="row-skill">
@@ -69,7 +78,7 @@
                     </div>
                     <div class="row-skill" style="margin-top: 10px;">
                         <div class="d-flex fw-bold">
-                            <div style="width: 90%;">Spring(Spring Boot, Spring Security, Maven, Gradle)</div>
+                            <div style="width: 90%;">Spring (Spring Boot, Spring Security, Maven, Gradle)</div>
                             <div style="width: 5%;">85%</div>
                         </div>
                         <div class="progress" style="width: 96%; margin-top: 10px; height: 8px;">
@@ -87,7 +96,7 @@
                     </div>
                     <div class="row-skill" style="margin-top: 10px;">
                         <div class="d-flex fw-bold">
-                            <div style="width: 90%;">Git (GitHub)</div>
+                            <div style="width: 90%;">Cloud (Jenkin, AWS, Heroku)</div>
                             <div style="width: 5%;">75%</div>
                         </div>
                         <div class="progress" style="width: 96%; margin-top: 10px; height: 8px;">
@@ -125,7 +134,7 @@
                     </div>
                     <div class="row-skill" style="margin-top: 10px;">
                         <div class="d-flex fw-bold">
-                            <div style="width: 90%;">ReactJS</div>
+                            <div style="width: 90%;">Git (GitHub, GitLab)</div>
                             <div style="width: 5%;">70%</div>
                         </div>
                         <div class="progress" style="width: 96%; margin-top: 10px; height: 8px;">
@@ -137,8 +146,8 @@
             </div>
         </div>
         <!-- Experience Section -->
+        <h3 id="exp-section">Experience</h3>
         <div class="portfolio-info">
-            <h4>Experience</h4>
             <div class="card shadow p-3 bg-body rounded" style="margin-top: 1.5%; text-align: left;">
                 <div class="card-body">
                   <h5 class="card-title">FPT University - Bachelor's Degree of Software Engineering</h5>
@@ -159,28 +168,57 @@
             </div>            
         </div>
         <!-- Pet Project Section -->
-        <div class="portfolio-info">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Capstone Project</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">ABC Project</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">XYZ Project</button>
-                </li>
-              </ul>
-              <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
-              </div>            
-        </div>
+        <h3 id="pet-section">Pet Project</h3>
+        <div class="card portfolio-info mb-3 mt-3 shadow p-3 bg-body rounded">
+            <div class="card-body">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+                          My Portfolio
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                          Chat App
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link disabled" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
+                          Capstone Project
+                        </button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" style="text-align: left;" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="pet-project-box">
+                            <h6>Technical : <small class="text-muted">HTML, CSS, Javascript, Bootstrap</small></h6>
+                            <h6>Git : <small class="text-muted"><a href="https://github.com/tuanvipandpro/my-portfolio" target="_blank">https://github.com/tuanvipandpro/my-portfolio</a></small></h6>
+                            <p><span class="h6">Description : </span><small>I did this project to learn more about bootstrap and practice my website design skills. I use this project as an online CV, this is also the main source code of the website you are viewing.</small></p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade text-start" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="pet-project-box">
+                            <h6>Technical : <small class="text-muted">VueJS, ElementUI, NodeJS, Socket.io</small></h6>
+                            <h6>Git : <small class="text-muted"><a href="https://github.com/tuanvipandpro/realtime-chat" target="_blank">https://github.com/tuanvipandpro/realtime-chat</a></small></h6>
+                            <p><span class="h6">Description : </span>
+                                <small>
+                                    This is a small web app that helps users to communicate in real-time. 
+                                    With this project, I learned how to use Vue, as well as some of its modules like Vuex or Vue-Router along with a CSS library ElementUI. 
+                                    Also, I learned how to create sockets with socket.io and how to handle the server side with NodeJS.
+                                </small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        ...
+                    </div>
+                </div>
+            </div>
+        </div>        
     </div>
     <div class="footer">
         <div class="container text-center">
-            <a href="https://www.facebook.com/BMX.HellBoy/" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+            <a href="https://www.facebook.com/BMX.HellBoy/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
             <a href="https://github.com/tuanvipandpro" target="_blank"><i class="fab fa-github fa-2x"></i></a>
             <a href="https://www.linkedin.com/in/tu%E1%BA%A5n-l%C3%AA-b002081b5/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></i></a>
         </div>

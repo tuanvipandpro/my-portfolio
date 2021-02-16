@@ -16,8 +16,10 @@
     <script src="js/index.js"></script>
 </head>
 <body>
-    <div class="header" style="background-image: url('images/bg-1.jpg');" >
-        <nav class="navbar sticky-top navbar-light" style="top: 5px">
+    <div class="header" style="background-image: url('images/bg-1.jpg');"></div>
+    <div>
+        <!-- <div class="header-backgroud-color"></div> -->
+        <nav class="navbar sticky-top navbar-light" style="top: 5px;">
             <div class="h4" style="margin-left: 10%;">My Profile</div>
             <div style="margin-right: 10%;">
               <a class="navbar-brand" href="#about-section"><small>About</small></a>
@@ -26,18 +28,28 @@
               <a class="navbar-brand" href="#pet-section"><small>Work</small></a>
             </div>
         </nav>
+        <div>
+            <div><img class="avatar" src="images/avatar.jpg" alt="Card image cap"></div>
+            <div>
+                <h1><strong>Lê Minh Tuấn</strong></h1>
+                <h3><small>Full Stack Web Developer</small></h3>
+                <button type="button" class="btn btn-success">Download CV</button>
+            </div>
+        </div>
     </div>
-    <div class="body">
+    <div class="body mt-5">
         <!-- Information Section -->
         <div id="about-section" class="portfolio-info shadow p-3 mb-5 bg-body rounded d-flex">
             <div class="portfolio-info-box">
-                <h3 style="margin-bottom: 20px;">About</h3>             
+                <h3 style="margin-bottom: 20px;"><i class="fas fa-edit"></i> About</h3>
+                <hr style="width: 95%;"/>             
                 <p>Hello! I am Le Minh Tuan. Java Full Stack Web Developer.</p>
-                <p>This is my self-introduction, experience, personal project and skills I've accumulated. If you are interested in me, scroll down to contact me.</p>
+                <p>This is my self-introduction, experience, personal project and skills I've accumulated. <br/>If you are interested in me, scroll down to contact me.</p>
                 <p>Thank you !</p>
             </div>
             <div class="portfolio-info-box">
-                <h3 style="margin-bottom: 20px;">Information</h3>
+                <h3 style="margin-bottom: 20px;"><i class="far fa-address-card"></i> Information</h3>
+                <hr style="width: 95%;"/> 
                 <div class="info-row">
                     <div class="d-flex">
                         <div style="width: 30%;"><strong>Age : </strong></div>
@@ -63,7 +75,7 @@
             </div>
         </div>
         <!-- Technical Section -->
-        <h3 id="tech-section">Technical Skill</h3>
+        <h3 id="tech-section"><i class="fas fa-keyboard"></i> Technical Skill</h3>
         <div class="portfolio-info shadow p-3 mt-3 mb-5 bg-body rounded text-center">
             <div class="d-flex" style="margin-top: 20px;">
                 <div class="portfolio-info-box">
@@ -146,7 +158,7 @@
             </div>
         </div>
         <!-- Experience Section -->
-        <h3 id="exp-section">Experience</h3>
+        <h3 id="exp-section"><i class="fas fa-briefcase"></i> Experience</h3>
         <div class="portfolio-info">
             <div class="card shadow p-3 bg-body rounded" style="margin-top: 1.5%; text-align: left;">
                 <div class="card-body">
@@ -168,23 +180,23 @@
             </div>            
         </div>
         <!-- Pet Project Section -->
-        <h3 id="pet-section">Pet Project</h3>
+        <h3 id="pet-section"><i class="fas fa-laptop-code"></i> Pet Project</h3>
         <div class="card portfolio-info mb-3 mt-3 shadow p-3 bg-body rounded">
             <div class="card-body">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
-                          My Portfolio
+                            <i class="fab fa-html5"></i> My Portfolio
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
-                          Chat App
+                            <i class="fab fa-vuejs"></i> Chat App
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link disabled" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
-                          Capstone Project
+                            <i class="fab fa-java"></i> Capstone Project
                         </button>
                     </li>
                 </ul>
@@ -218,13 +230,14 @@
     </div>
     <div class="footer">
         <div class="container text-center">
-            <a href="https://www.facebook.com/BMX.HellBoy/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
-            <a href="https://github.com/tuanvipandpro" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-            <a href="https://www.linkedin.com/in/tu%E1%BA%A5n-l%C3%AA-b002081b5/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></i></a>
+            <a href="https://www.facebook.com/BMX.HellBoy/" target="_blank" style="color: #95a5a6;"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="https://github.com/tuanvipandpro" target="_blank"  style="color: #95a5a6;"><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/tu%E1%BA%A5n-l%C3%AA-b002081b5/"  style="color: #95a5a6;" target="_blank"><i class="fab fa-linkedin fa-2x"></i></i></a>
         </div>
         <div class="text-center text-muted">
-            <p>&copy; Creative CV. All rights reserved.<br>Edit - <a class="credit" href="https://templateflip.com" target="_blank">TemplateFlip</a></p>
+            <p>&copy; Creative CV. All rights reserved.<br>Power By TuanLM</p>
           </div>        
     </div>
+    <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>    
 </body>
 </html>

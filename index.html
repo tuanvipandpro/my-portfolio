@@ -33,7 +33,9 @@
             <div>
                 <h1><strong>Lê Minh Tuấn</strong></h1>
                 <h3><small>Full Stack Web Developer</small></h3>
-                <button type="button" class="btn btn-success">Download CV</button>
+                <form method="GET" action="tuanlm-cv.pdf">
+                    <button type="submit" class="btn btn-success">Download CV</button>
+                </form>
             </div>
         </div>
     </div>
@@ -43,7 +45,7 @@
             <div class="portfolio-info-box">
                 <h3 style="margin-bottom: 20px;"><i class="fas fa-edit"></i> About</h3>
                 <hr style="width: 95%;"/>             
-                <p>Hello! I am Le Minh Tuan. Java Full Stack Web Developer.</p>
+                <p>Hello! I am Le Minh Tuan. Full Stack Web Developer.</p>
                 <p>This is my self-introduction, experience, personal project and skills I've accumulated. <br/>If you are interested in me, scroll down to contact me.</p>
                 <p>Thank you !</p>
             </div>
@@ -76,85 +78,49 @@
         </div>
         <!-- Technical Section -->
         <h3 id="tech-section"><i class="fas fa-keyboard"></i> Technical Skill</h3>
-        <div class="portfolio-info shadow p-3 mt-3 mb-5 bg-body rounded text-center">
-            <div class="d-flex" style="margin-top: 20px;">
-                <div class="portfolio-info-box">
-                    <div class="row-skill">
-                        <div class="d-flex fw-bold">
-                            <div style="width: 81%;">Java 8+</div>
-                            <div style="width: 18%;">Very Good</div>
-                        </div>
-                        <div class="progress" style="width: 96%; margin-top: 10px; height: 8px;">
-                            <div class="progress-bar bg-success" style="width: 90%;" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="row-skill" style="margin-top: 10px;">
-                        <div class="d-flex fw-bold">
-                            <div style="width: 81%;">Spring (Spring Boot, Spring Security)</div>
-                            <div style="width: 18%;">Very Good</div>
-                        </div>
-                        <div class="progress" style="width: 96%; margin-top: 10px; height: 8px;">
-                            <div class="progress-bar bg-success" style="width: 85%;" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="row-skill" style="margin-top: 10px;">
-                        <div class="d-flex fw-bold">
-                            <div style="width: 88%;">SQL (MS SQL, PostgreSQL, MySQL)</div>
-                            <div style="width: 5%;">Good</div>
-                        </div>
-                        <div class="progress" style="width: 96%; margin-top: 10px; height: 8px;">
-                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="row-skill" style="margin-top: 10px;">
-                        <div class="d-flex fw-bold">
-                            <div style="width: 88.5%;">Cloud (Jenkin, AWS, Heroku)</div>
-                            <div style="width: 5%;">Basic</div>
-                        </div>
-                        <div class="progress" style="width: 96%; margin-top: 10px; height: 8px;">
-                            <div class="progress-bar bg-danger w-50" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
+        <div class="d-flex" style="align-items: center; justify-content: center;">
+            <div class="shadow p-3 mt-3 mb-5 bg-body rounded text-center" style="width: 25%;">
+                <div style="margin-top: 10px; text-align: left;">
+                    <h5>Programming Language</h5>
+                    <ul>
+                        <li>Java 8+</li>
+                        <li>Javascript, ES6</li>
+                        <li>HTML5, CSS3</li>
+                    </ul> 
+                    <h5>Framework & Platform</h5>
+                    <ul>
+                        <li>VueJS, ReactJS, NodeJS</li>
+                        <li>Spring Boot, MyBatis Framework</li>
+                        <li>Restful API, JSON</li>
+                    </ul>                     
                 </div>
-                <div class="portfolio-info-box">
-                    <div class="row-skill">
-                        <div class="d-flex fw-bold">
-                            <div style="width: 95%;">HTML/CSS/JS</div>
-                            <div style="width: 20%;">Very Good</div>
-                        </div>
-                        <div class="progress" style="width: 96%; margin-top: 10px; height: 8px;">
-                            <div class="progress-bar bg-success" style="width: 90%;" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="row-skill" style="margin-top: 10px;">
-                        <div class="d-flex fw-bold">
-                            <div style="width: 90%;">VueJS (ES6+, Babel, Webpack)</div>
-                            <div style="width: 5%;">Good</div>
-                        </div>
-                        <div class="progress" style="width: 96%; margin-top: 10px; height: 8px;">
-                            <div class="progress-bar" style="width: 85%;" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="row-skill" style="margin-top: 10px;">
-                        <div class="d-flex fw-bold">
-                            <div style="width: 90%;">NodeJS (ExpressJS)</div>
-                            <div style="width: 5%;">Good</div>
-                        </div>
-                        <div class="progress" style="width: 96%; margin-top: 10px; height: 8px;">
-                            <div class="progress-bar" style="width: 85%;" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="row-skill" style="margin-top: 10px;">
-                        <div class="d-flex fw-bold">
-                            <div style="width: 90%;">Git (GitHub, GitLab)</div>
-                            <div style="width: 5%;">Good</div>
-                        </div>
-                        <div class="progress" style="width: 96%; margin-top: 10px; height: 8px;">
-                            <div class="progress-bar" style="width: 85%;" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
+            </div>
+            <div class="shadow p-3 mt-3 mb-5 bg-body rounded text-center" style="width: 25%; margin-left: 1%;">
+                <div style="margin-top: 10px; text-align: left;">
+                    <h5>Database</h5>
+                    <ul>
+                        <li>MS SQL Server</li>
+                        <li>MySQL</li>
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                    </ul>
+                    <h5>Version Control</h5>
+                    <ul>
+                        <li>Git, Github</li>
+                        <li>SVN, TortoiseSVN</li>
+                    </ul>                     
                 </div>
-
+            </div>
+            <div class="shadow p-3 mt-3 mb-5 bg-body rounded text-center" style="width: 30%; margin-left: 1%;">
+                <div style="margin-top: 10px; text-align: left;">
+                    <h5>Knowledge</h5>
+                    <ul>
+                        <li>Good communication in English, reading specialized documents</li>
+                        <li>Good understanding about the Agile and Scrum process</li>
+                        <li>Deep understanding about OOP, Design Pattern, SOLID principles, Dependency Injection</li>
+                        <li>Good understanding software design, database design, RestfulAPI, ...</li>
+                    </ul>                     
+                </div>
             </div>
         </div>
         <!-- Experience Section -->
